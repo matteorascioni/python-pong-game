@@ -11,9 +11,11 @@ class Paddle(Turtle):
 
     # Handling the paddles onkey movements
     def go_up(self):
-            new_y = self.ycor() + 20
-            return self.goto(self.xcor(), new_y)
+        """ This function is responsible for managing the upward movement of the paddle by increasing the Y coordinate. """
+        new_y = self.ycor() + 20
+        return self.goto(self.xcor(), new_y)
             
     def go_down(self):
-            new_y = self.ycor() - 20
-            return self.goto(self.xcor(), new_y)
+        """ This function is responsible for managing the downward movement of the paddle by decreasing the Y coordinate. """
+        new_y = self.ycor() - 20
+        return self.goto(self.xcor(), new_y)
